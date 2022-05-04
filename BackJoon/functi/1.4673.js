@@ -10,11 +10,11 @@ function d(num) {
   newArr = newArr.filter((v) => v !== result);
 }
 
-for (let i = 0; i <= 10000; i++) {
+for (let i = 1; i <= 10000; i++) {
   d(i);
 }
 
-// d(110);
+// 출력부분;
 let console_log = '';
 for (let i = 0; i < newArr.length; i++) {
   console_log = console_log + newArr[i] + '\n';
