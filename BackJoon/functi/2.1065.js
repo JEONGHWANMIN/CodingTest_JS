@@ -4,6 +4,7 @@ let input = fs.readFileSync(filePath).toString();
 
 let count = 0;
 
+// 18
 function han(num) {
   // 99보다 작으면 차를 알 수 없으니 count++
   if (num <= 99) {
@@ -16,6 +17,7 @@ function han(num) {
     반복문이 다 돌고 result = true 이면 카운터 ++
    */
   let strN = num + '';
+  // 124
   let gap = +strN[0] - +strN[1];
   let result = true;
 
@@ -31,6 +33,7 @@ function han(num) {
   }
 }
 
+// 110
 for (let i = 1; i <= +input; i++) {
   han(i);
 }

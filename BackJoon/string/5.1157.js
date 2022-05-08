@@ -10,6 +10,7 @@ function solution(str) {
   for (let i = 0; i < str.length; i++) {
     str_Counter[str[i]] = (str_Counter[str[i]] | 0) + 1;
   }
+  console.log(str_Counter);
   // 이게되네 ?
   let max = Math.max(...Object.values(str_Counter));
   let count = 0;

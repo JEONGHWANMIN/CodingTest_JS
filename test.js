@@ -1,8 +1,3 @@
-let arr = [1, 2, 3, 4, 5];
-
-console.log(
-  arr.findIndex((value) => {
-    console.log(value);
-    return value > 2;
-  })
-);
+let arr = [1, 2, 3];
+let count = arr.push(4);
+console.log(count);

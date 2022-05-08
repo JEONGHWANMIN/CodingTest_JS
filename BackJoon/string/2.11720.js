@@ -5,6 +5,7 @@ let input = fs.readFileSync(filePath).toString().split('\n');
 /*
 10 , 1 0 어떻게 구분하지 ?
 */
+// [10 1 2] / [1 0 1 2]
 function solution(str) {
   let sum = 0;
   for (let i = 0; i < str.length; i++) {
