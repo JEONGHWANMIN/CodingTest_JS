@@ -1,7 +1,4 @@
-let coratian_arr = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z='];
+let key1 = Symbol('hwan');
+let key2 = Symbol('hwan');
 
-let str = 'ljes=njak';
-
-idx = str.indexOf('s=');
-
-str = str.replace('s=', '');
+console.log(key1 === key2);
