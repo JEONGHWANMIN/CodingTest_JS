@@ -5,10 +5,24 @@ let input = fs.readFileSync(filePath).toString().trim().split('\n');
 let result = 0;
 let Case = input[0];
 
-function groupWordCheker(word) {}
-
-for (let i = 1; i < Case; i++) {
-  result = result + groupWordCheker(input[1]);
+function groupWordCheker(word) {
+  let check = [];
+  for (let value of word) {
+    if (check.includes(value)) {
+      if (check.at(-1) === value) {
+        continue;
+      } else {
+        return false;
+      }
+    } else {
+      check.push(value);
+    }
+  }
+  return true;
 }
 
-let arr = [1, 2, 3, 4, 5];
+for (let i = 1; i <= Case; i++) {
+  result = result + groupWordCheker(input[i]);
+}
+
+console.log(result);
