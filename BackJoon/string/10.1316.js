@@ -18,6 +18,7 @@ function groupWordCheker(word) {
       check.push(value);
     }
   }
+  // 그냥 확인용으로 true 걸어놨는데 통과되버림 .. 아마 true -> 1로 변환되서 숫자 잘 세어진듯
   return true;
 }
 

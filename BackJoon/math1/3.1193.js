@@ -4,6 +4,7 @@ let input = fs.readFileSync(filePath).toString();
 
 // 규칙 못찿아서 규칙부분만 인터넷 참고함....
 // https://www.youtube.com/watch?v=bEQq9jvU_Hg
+// -> 영상에서는 인덱스 구한 후 n(n+1)/2 공식을 사용해서 sum값을 바로 알아냄
 function solution(num) {
   let sum = 0;
   let idx = 0;
