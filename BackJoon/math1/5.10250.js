@@ -16,5 +16,6 @@ function solution(arr) {
   if (hn < 10) {
     hn = '0' + hn;
   }
+  // 120호가 나와야 하데 1 + 20이 되서 21호가 됨  , 그래서 문자열로 처리해줌
   return Number(rest + String(hn));
 }
