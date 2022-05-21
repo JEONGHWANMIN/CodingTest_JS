@@ -22,7 +22,7 @@ function solution(floor, room) {
       result = result + floor_zero[j];
       result_arr.push(result);
     }
-
+    // 기존 0층 배열에 이번층 합을 복사하는 부분
     for (let i = 0; i < floor_zero.length; i++) {
       floor_zero[i] = result_arr[i];
     }
