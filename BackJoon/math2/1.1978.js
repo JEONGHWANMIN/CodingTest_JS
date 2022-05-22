@@ -13,6 +13,7 @@ function solution(num) {
   }
   return 1;
 }
+
 let arr = input[1].split(' ').map((v) => +v);
 for (let i = 0; i < arr.length; i++) {
   result = result + solution(arr[i]);

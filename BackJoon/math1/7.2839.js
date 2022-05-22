@@ -3,18 +3,17 @@ const filePath = process.platform === 'linux' ? '/dev/stdin' : '../input.txt';
 let input = fs.readFileSync(filePath).toString();
 
 function solution(num) {
-  // 5씩 빼준다.
-  let five = 0;
-  let three;
-  if (num < 5 && num % 3 !== 0) return -1;
-  while (num > 3) {
-    num = num - 5;
-    five++;
-    if (num % 5 !== 0 && num % 3 === 0) break;
+  let result = 0;
+  while (true) {
+    if (num % 5 === 0) {
+      result = result + num / 5;
+      break;
+    }
+    num = num - 3;
+    result = result + 1;
+    if (num < 0) return -1;
   }
-  three = num / 3;
-
-  return five + three;
+  return result;
 }
 
 console.log(solution(+input));

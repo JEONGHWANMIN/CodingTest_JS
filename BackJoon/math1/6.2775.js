@@ -5,12 +5,16 @@ let input = fs.readFileSync(filePath).toString().split('\n');
 // 백준 테스트케이스 개빡친다 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 const Case = +input.shift();
 
+//  1 3
 function solution(floor, room) {
   const floor_zero = [];
   // floor room 을 알려면 0층 room까지의 합
   for (let i = 1; i <= room; i++) {
     floor_zero.push(i);
   }
+  // [1,2,3] 0층
+  // [1,3,6] 1층
+  // [1,4,10] 2층
   if (floor === 0) {
     return floor_zero[room - 1];
   }
