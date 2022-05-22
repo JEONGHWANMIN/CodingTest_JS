@@ -19,7 +19,9 @@
 ```
 
 @types/node : typescirpt require 불러올때 필요함
+
 typescript : typescript 사용할거기 때문에 필요
+
 ts-node : 자바스크립트 파일로 컨파일 하지 않고 바로 node로 타입스크립트 실행 가능
 
 사용법
