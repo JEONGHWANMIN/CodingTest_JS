@@ -29,3 +29,5 @@ ts-node : 자바스크립트 파일로 컨파일 하지 않고 바로 node로 �
 ```terminal
 ts-node {filename}
 ```
+
+https://www.acmicpc.net/step
