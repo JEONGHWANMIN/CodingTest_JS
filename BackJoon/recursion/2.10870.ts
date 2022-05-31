@@ -10,3 +10,4 @@ function solution(n: number): number {
 }
 
 console.log(solution(+input));
+export {};
