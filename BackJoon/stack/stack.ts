@@ -75,3 +75,4 @@ rl.on('line', function (input: any) {
   console.log(result);
   process.exit();
 });
+export {};
