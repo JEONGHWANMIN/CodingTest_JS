@@ -339,3 +339,18 @@ Please make sure you have the correct access rights
 and the repository exists.
 ##### auto push end #####
 ##### auto push start #####
+On branch master
+Your branch is ahead of 'origin/master' by 18 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+	modified:   excute.py
+
+[master e571c3b] git commit auto push
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   71059ca..e571c3b  master -> master
+##### auto push end #####
+##### auto push start #####
