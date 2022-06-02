@@ -1,8 +1,6 @@
 #!/bin/bash
 echo '##### auto push start #####'
 
-j ALGORITHM
-
 git add ./
 git status
 git commit -m "git commit auto push"
