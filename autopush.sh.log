@@ -52,3 +52,16 @@ Changes to be committed:
 fatal: could not read Username for 'https://github.com': Device not configured
 ##### auto push end #####
 ##### auto push start #####
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+[master 242d574] git commit auto push
+ 1 file changed, 13 insertions(+)
+fatal: could not read Username for 'https://github.com': Device not configured
+##### auto push end #####
+##### auto push start #####
