@@ -252,3 +252,21 @@ Please make sure you have the correct access rights
 and the repository exists.
 ##### auto push end #####
 ##### auto push start #####
+On branch master
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+	modified:   excute.py
+
+[master 48fe197] git commit auto push
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+##### auto push end #####
+##### auto push start #####
