@@ -1,7 +1,8 @@
 #!/bin/bash
 echo '##### auto push start #####'
 
-git add ./
+cd ~/ml/Algorithm 
+git add .
 git status
 git commit -m "git commit auto push"
 git push origin master
