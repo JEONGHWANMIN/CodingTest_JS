@@ -1,1 +1,15 @@
 ##### auto push start #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh
+	new file:   autopush.sh.log
+
+[master 1ab0e8a] git commit auto push
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 autopush.sh.log
+fatal: could not read Username for 'https://github.com': Device not configured
+##### auto push end #####
+##### auto push start #####
