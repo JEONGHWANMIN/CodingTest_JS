@@ -14,4 +14,4 @@ while True:
     schedule.run_pending()
     time.sleep(1)
 
-    # 테스트 ㅎㅎasdasss
+    # 제발
