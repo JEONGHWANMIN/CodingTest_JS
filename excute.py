@@ -13,3 +13,5 @@ schedule.every(5).seconds.do(message)
 while True:
     schedule.run_pending()
     time.sleep(1)
+
+    # 테스트 ㅎㅎasdas
