@@ -1,16 +1,1 @@
-##### auto push start #####
-On branch master
-Your branch is ahead of 'origin/master' by 24 commits.
-  (use "git push" to publish your local commits)
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	modified:   autopush.sh.log
-
-[master 900aeef] git commit auto push
- 1 file changed, 1 insertion(+), 412 deletions(-)
- rewrite autopush.sh.log (99%)
-To github.com:JEONGHWANMIN/CodingTest_JS.git
-   19838a7..900aeef  master -> master
-##### auto push end #####
-##### auto push start #####
+##### PUSH START : 2022-06-03 17:50:00 #####
