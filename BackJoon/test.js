@@ -1,15 +1,30 @@
-function convertDoubleSpaceToSingle(str) {
-  // TODO: 여기에 코드를 작성합니다.
-  let result = [];
-  let strArr = str.split('');
-  for (let i = 0; i < strArr.length; i++) {
-    if (str[i] === ' ' && str[i] === str[i + 1]) {
-      continue;
+function ABCheck(str) {
+  // code goes here
+  let count = 1;
+  let CountStart = false;
+  let Start;
+  for (let i = 0; i < str.length; i++) {
+    if (Start !== 'A' && count === 5 && str[i].toUpperCase() === 'A')
+      return true;
+    if (Start !== 'B' && count === 5 && str[i].toUpperCase() === 'B')
+      return true;
+    if (count > 5) count = 0;
+    if (str[i].toUpperCase() === 'A') {
+      count = 1;
+      CountStart = true;
+      Start = 'A';
+    } else if (str[i].toUpperCase() === 'B') {
+      count = 1;
+      CountStart = true;
+      Start = 'B';
     }
-    result.push(str[i]);
-  }
-  return result.join('');
-}
 
-let output = convertDoubleSpaceToSingle('string  with  double  spaces');
-console.log(output); // --> "string with double spaces"
+    if (CountStart) count++;
+  }
+  return false;
+}
+let output = ABCheck('lane Borrowed');
+console.log(output); // --> true
+
+output = ABCheck('TgDrnjAz6kAbdEaxFkrKIsa');
+console.log(output); // --> true
