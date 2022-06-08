@@ -1,30 +1,18 @@
-function ABCheck(str) {
-  // code goes here
-  let count = 1;
-  let CountStart = false;
-  let Start;
+function insertDash(str) {
+  // TODO: 여기에 코드를 작성합니다.
+  let result = '';
+  let oddCount = 0;
   for (let i = 0; i < str.length; i++) {
-    if (Start !== 'A' && count === 5 && str[i].toUpperCase() === 'A')
-      return true;
-    if (Start !== 'B' && count === 5 && str[i].toUpperCase() === 'B')
-      return true;
-    if (count > 5) count = 0;
-    if (str[i].toUpperCase() === 'A') {
-      count = 1;
-      CountStart = true;
-      Start = 'A';
-    } else if (str[i].toUpperCase() === 'B') {
-      count = 1;
-      CountStart = true;
-      Start = 'B';
+    if (i === str.length - 1) {
+      result = result + str[i];
+      break;
     }
-
-    if (CountStart) count++;
+    if (+str[i] % 2 !== 0 && +str[i + 1] % 2 !== 0)
+      result = result + str[i] + '-';
+    else result = result + str[i];
   }
-  return false;
+  return result;
 }
-let output = ABCheck('lane Borrowed');
-console.log(output); // --> true
 
-output = ABCheck('TgDrnjAz6kAbdEaxFkrKIsa');
-console.log(output); // --> true
+let output = insertDash('454793');
+console.log(output); // --> 4547-9-3
