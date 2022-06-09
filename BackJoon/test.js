@@ -1,18 +1,29 @@
-function insertDash(str) {
+function removeExtremes(arr) {
   // TODO: 여기에 코드를 작성합니다.
-  let result = '';
-  let oddCount = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (i === str.length - 1) {
-      result = result + str[i];
+  const arrLength = arr.map((value) => value.length);
+
+  let max = Math.max(...arrLength);
+  let min = Math.min(...arrLength);
+
+  let removeMax = false;
+  let removeMin = false;
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (removeMax !== true && arr[i].length === max) {
+      removeMax = true;
+      arr.splice(i, 1);
+    } else if (removeMin !== true && arr[i].length === min) {
+      removeMin = true;
+      arr.splice(i, 1);
+    }
+
+    if (removeMax === true && removeMin === true) {
       break;
     }
-    if (+str[i] % 2 !== 0 && +str[i + 1] % 2 !== 0)
-      result = result + str[i] + '-';
-    else result = result + str[i];
   }
-  return result;
+  return arr;
 }
-
-let output = insertDash('454793');
-console.log(output); // --> 4547-9-3
+// output = removeExtremes(['where', 'is', 'the', 'longest', 'word']);
+// console.log(output); // --> ['where', 'the', 'word',]
+output = removeExtremes(['a', 'b', 'c', 'def']);
+console.log(output); // --> ['a', 'b']
