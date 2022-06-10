@@ -22,3 +22,5 @@ for (var i = 1; i <= 1000000; i++) {
 if (i >= 1000001) {
   console.log(0);
 }
+
+export {};
