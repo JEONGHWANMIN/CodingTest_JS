@@ -4,19 +4,15 @@ let input = fs.readFileSync(filePath).toString().trim().split('\n');
 
 const fields = input.slice(1);
 function solution(arr: string[]): void {
-  console.log(arr);
   let count = 0;
+  console.log(arr);
   for (let i = 0; i < arr.length; i++) {
-    let target = arr[i];
+    console.log(arr[arr.length - 1]);
     let start = arr[i][0];
-    for (let j = 1; j < target.length - 1; j++) {
-      if (target[j] === target[j + 1]) {
-        count++;
-        j++;
-      }
+    for (let j = 0; j < arr[i].length; j++) {
+      console.log(arr[i][j]);
     }
   }
-  console.log(count);
 }
 
 solution(fields);
