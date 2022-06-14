@@ -1,26 +1,20 @@
-function findBugInApples(arr) {
+function readVertically(arr) {
   // TODO: 여기에 코드를 작성합니다.
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].length; j++) {
-      if (arr[i][j] === 'B') {
-        return [i, j];
-      }
+  let result = '';
+  for (let i = 0; ; i++) {
+    let count = result.length;
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j][i] !== undefined) result = result + arr[j][i];
     }
+    if (count === result.length) break;
   }
+  return result;
 }
 
-let output = findBugInApples([
-  ['A', 'A'],
-  ['A', 'A'],
-  ['A', 'A', 'A', 'B'],
-]);
-console.log(output); //[1, 0]
-
-output = findBugInApples([
-  ['A', 'A', 'A', 'A', 'A'],
-  ['A', 'B', 'A', 'A', 'A'],
-  ['A', 'A', 'A', 'A', 'A'],
-  ['A', 'A', 'A', 'A', 'A'],
-  ['A', 'A', 'A', 'A', 'A'],
-]);
-console.log(output); //[1, 1]
+let input = [
+  //
+  'hello',
+  'hi',
+];
+let output = readVertically(input);
+console.log(output); // --> 'hweolllrod'
