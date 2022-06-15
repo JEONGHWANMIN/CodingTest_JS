@@ -135,3 +135,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    5b3e08b..c5b5bf4  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-06-14 17:50:01 #####
+On branch master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/test.js
+	modified:   autopush.sh.log
+
+[master 6751fc7] git commit auto push
+ 2 files changed, 35 insertions(+), 26 deletions(-)
+ rewrite BackJoon/test.js (89%)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   c5b5bf4..6751fc7  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-06-15 17:50:01 #####
