@@ -1,20 +1,24 @@
-function readVertically(arr) {
+function isIsogram(str) {
   // TODO: 여기에 코드를 작성합니다.
-  let result = '';
-  for (let i = 0; ; i++) {
-    let count = result.length;
-    for (let j = 0; j < arr.length; j++) {
-      if (arr[j][i] !== undefined) result = result + arr[j][i];
-    }
-    if (count === result.length) break;
+  let strCount = {};
+
+  for (let i = 0; i < str.length; i++) {
+    strCount[str[i].toUpperCase()] = (strCount[str[i].toUpperCase()] | 0) + 1;
   }
-  return result;
+
+  // console.log(strCount);
+  for (let key in strCount) {
+    if (strCount[key] > 1) return false;
+  }
+
+  return true;
 }
 
-let input = [
-  //
-  'hello',
-  'hi',
-];
-let output = readVertically(input);
-console.log(output); // --> 'hweolllrod'
+let output = isIsogram('aba');
+console.log(output); // false
+
+output = isIsogram('Dermatoglyphics');
+console.log(output); // true
+
+output = isIsogram('moOse');
+console.log(output); // false
