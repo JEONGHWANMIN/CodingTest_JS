@@ -220,3 +220,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    eb4407a..ab5d3b5  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-06-21 17:50:01 #####
+On branch master
+Your branch is ahead of 'origin/master' by 12 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Koflit/19_decryptCaesarCipher.js
+	modified:   autopush.sh.log
+
+[master 60dcaaa] git commit auto push
+ 2 files changed, 49 insertions(+)
+ create mode 100644 Koflit/19_decryptCaesarCipher.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   ab5d3b5..60dcaaa  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-06-22 17:50:00 #####
