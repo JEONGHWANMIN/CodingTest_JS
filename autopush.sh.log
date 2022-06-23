@@ -236,3 +236,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    ab5d3b5..60dcaaa  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-06-22 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Koflit/20_compressString.js
+	modified:   autopush.sh.log
+
+[master 48fbb9d] git commit auto push
+ 2 files changed, 39 insertions(+)
+ create mode 100644 Koflit/20_compressString.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   60dcaaa..48fbb9d  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-06-23 17:50:00 #####
