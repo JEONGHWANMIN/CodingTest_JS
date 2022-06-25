@@ -270,3 +270,25 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    48fbb9d..7d83008  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-06-24 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 15 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Koflit/02_fibonacci.js
+	new file:   Koflit/13_recursion.js
+	new file:   Koflit/14_recursion.js
+	new file:   Koflit/15_recursion.js
+	modified:   autopush.sh.log
+
+[master 769511c] git commit auto push
+ 5 files changed, 104 insertions(+)
+ create mode 100644 Koflit/02_fibonacci.js
+ create mode 100644 Koflit/13_recursion.js
+ create mode 100644 Koflit/14_recursion.js
+ create mode 100644 Koflit/15_recursion.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   7d83008..769511c  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-06-25 17:50:00 #####
