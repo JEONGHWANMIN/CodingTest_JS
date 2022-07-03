@@ -20,3 +20,5 @@ function tiling(n: number) {
 }
 
 tiling(+input);
+
+export {};

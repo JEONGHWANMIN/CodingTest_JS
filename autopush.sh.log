@@ -370,3 +370,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    a0f6c7d..48e9707  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-01 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Koflit/07_power.js
+	modified:   autopush.sh.log
+
+[master eac6d6b] git commit auto push
+ 2 files changed, 37 insertions(+)
+ create mode 100644 Koflit/07_power.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   48e9707..eac6d6b  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-03 17:50:01 #####
