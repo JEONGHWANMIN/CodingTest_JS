@@ -386,3 +386,26 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    48e9707..eac6d6b  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-03 17:50:01 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	modified:   BackJoon/dp/11726.ts
+	new file:   BackJoon/math2/2609.js
+	new file:   BackJoon/sort/6.11650.js
+	modified:   BackJoon/test.js
+	new file:   Koflit/tree_BFS.js
+	modified:   autopush.sh.log
+
+[master 4d960bc] git commit auto push
+ 7 files changed, 130 insertions(+), 25 deletions(-)
+ create mode 100644 BackJoon/math2/2609.js
+ create mode 100644 BackJoon/sort/6.11650.js
+ rewrite BackJoon/test.js (98%)
+ create mode 100644 Koflit/tree_BFS.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   88a62de..4d960bc  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-04 17:50:01 #####
