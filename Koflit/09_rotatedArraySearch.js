@@ -1,35 +1,36 @@
 const rotatedArraySearch = function (rotated, target) {
-  let leftIdx = 0;
-  let rightIdx = rotated.length - 1;
-  let midIdx = Math.floor((leftIdx + rightIdx) / 2);
+  let start = 0;
+  let end = rotated.length - 1;
 
-  while (leftIdx < rightIdx) {
+  while (start <= end) {
     // 정렬된 배열이라면
-    if (
-      rotated[midIdx - 1] < rotated[midIdx] &&
-      rotated[midIdx] < rotated[midIdx + 1]
-    ) {
-      if (rotated[midIdx] > target) {
-        leftIdx = midIdx + 1;
-        midIdx = Math.floor((leftIdx + rightIdx) / 2);
-      } else if (rotated[midIdx] < target) {
-      }
-    }
-    // 정렬된 배열이 아니라면
-    else {
-    }
+    midIdx = parseInt((start + end) / 2);
 
-    console.log(midIdx);
+    console.log(`Start : ${start} , Mid : ${midIdx} , End : ${end}`);
     if (rotated[midIdx] === target) return midIdx;
 
-    break;
+    if (rotated[start] < rotated[midIdx]) {
+      // 왼쪽 절반이 정렬되어 있는 상태
+      if (target < rotated[midIdx] && rotated[start] <= target) {
+        left = midIdx - 1;
+      } else {
+        start = midIdx + 1;
+      }
+    } else {
+      // 오른쪽 절반이 정렬되어 있는 상태
+      if (target <= rotated[end] && rotated[midIdx] < target) {
+        start = midIdx + 1;
+      } else {
+        end = midIdx - 1;
+      }
+    }
   }
+
+  return -1;
 };
 
-// midIdx = 3 ,left = 0 , right = 6 ,
-//
-let output = rotatedArraySearch([10, 9, 8, 7, 6, 1, 2], 2);
+let output = rotatedArraySearch([4, 5, 6, 0, 1, 2, 3], 2);
 console.log(output); // --> 5
 
-// output = rotatedArraySearch([10, 11, 12,14,15 ,3, 6, 7, 8, 9], 11);
-// console.log(output); // --> -1
+output = rotatedArraySearch([4, 5, 6, 0, 1, 2, 3], 100);
+console.log(output); // --> -1
