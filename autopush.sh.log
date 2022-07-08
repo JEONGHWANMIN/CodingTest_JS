@@ -465,3 +465,28 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    830af0a..55f65f3  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-07 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	new file:   BackJoon/set_map/1.10815.js
+	modified:   BackJoon/sort/10.18870.js
+	new file:   BackJoon/sort/3.10893.js
+	modified:   BackJoon/test.js
+	modified:   Koflit/10_balancedBrackets.js
+	new file:   Koflit/11_getItemFromTwoSortedArrays.js
+	modified:   autopush.sh.log
+
+[master 376617c] git commit auto push
+ 8 files changed, 216 insertions(+), 71 deletions(-)
+ create mode 100644 BackJoon/set_map/1.10815.js
+ create mode 100644 BackJoon/sort/3.10893.js
+ rewrite Koflit/10_balancedBrackets.js (79%)
+ create mode 100644 Koflit/11_getItemFromTwoSortedArrays.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   55f65f3..376617c  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-08 17:50:01 #####

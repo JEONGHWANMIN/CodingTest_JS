@@ -1,4 +1,3 @@
-/* My Solution */
 // const balancedBrackets = function (str) {
 //   if (str.length === 0) return true;
 
@@ -12,6 +11,7 @@
 //   if (braket.length % 2 !== 0) return false;
 
 //   let len = braket.length;
+
 //   for (let i = 0; i < len; i++) {
 //     if (braket[0] === '(') {
 //       if (braket[1] === ')') {
@@ -67,11 +67,9 @@ const balancedBrackets = function (str) {
       }
     }
   }
+
   return stack.length === 0;
 };
-
-// 1. stack ['(']
-// [] '(' ')'
 
 let output = balancedBrackets('(');
 console.log(output); // // -> false
