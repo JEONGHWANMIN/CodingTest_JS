@@ -510,3 +510,24 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    376617c..7d47c1d  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-09 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	new file:   BackJoon/set_map/3.1620.js
+	new file:   BackJoon/set_map/4.10816.js
+	new file:   BackJoon/set_map/5.1764.js
+	modified:   autopush.sh.log
+
+[master f82ba9f] git commit auto push
+ 5 files changed, 117 insertions(+), 17 deletions(-)
+ create mode 100644 BackJoon/set_map/3.1620.js
+ create mode 100644 BackJoon/set_map/4.10816.js
+ create mode 100644 BackJoon/set_map/5.1764.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   7d47c1d..f82ba9f  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-10 17:50:00 #####
