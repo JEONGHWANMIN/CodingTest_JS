@@ -555,3 +555,20 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    f82ba9f..84b1703  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-12 17:50:00 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	modified:   BackJoon/permu_combi/1037.js
+	new file:   BackJoon/permu_combi/1934.js
+	modified:   autopush.sh.log
+
+[master e67f720] git commit auto push
+ 4 files changed, 38 insertions(+), 4 deletions(-)
+ create mode 100644 BackJoon/permu_combi/1934.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   bfa7c31..e67f720  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-13 17:50:00 #####
