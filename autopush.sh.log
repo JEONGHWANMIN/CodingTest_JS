@@ -615,3 +615,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    d336997..d77b438  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-15 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Koflit/Quicksort.js
+	modified:   autopush.sh.log
+
+[master 18ead5a] git commit auto push
+ 2 files changed, 24 insertions(+)
+ create mode 100644 Koflit/Quicksort.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   d77b438..18ead5a  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-16 17:50:00 #####
