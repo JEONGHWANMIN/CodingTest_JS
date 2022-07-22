@@ -704,3 +704,17 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    56ae045..e3636ab  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-21 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+[master be36bf2] git commit auto push
+ 1 file changed, 14 insertions(+)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   e3636ab..be36bf2  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-22 17:50:01 #####
