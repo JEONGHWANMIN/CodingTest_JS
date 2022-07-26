@@ -746,3 +746,22 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    f21aa64..5fa82b2  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-07-25 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 12 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	new file:   BackJoon/bfs/1012.js
+	new file:   BackJoon/bfs/2178.js
+	modified:   autopush.sh.log
+
+[master ab793a4] git commit auto push
+ 4 files changed, 114 insertions(+), 5 deletions(-)
+ create mode 100644 BackJoon/bfs/1012.js
+ create mode 100644 BackJoon/bfs/2178.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   5fa82b2..ab793a4  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-07-26 17:50:00 #####
