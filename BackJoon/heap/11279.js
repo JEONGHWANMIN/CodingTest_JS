@@ -2,7 +2,7 @@ const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : '../input.txt';
 let input = fs.readFileSync(filePath).toString().trim().split('\n');
 
-class MaxHeap {
+class Maxvalues {
   constructor() {
     this.values = [];
   }
@@ -13,14 +13,12 @@ class MaxHeap {
 
   insert(el) {
     this.values.push(el);
-    if (this.values.length > 1) {
-      this.bubbleUp();
-    }
-    return this.values;
+    this.bubbleUp();
   }
 
   bubbleUp() {
     let idx = this.values.length - 1;
+    if (idx < 1) return;
     let parent = Math.floor((idx - 1) / 2);
     while (this.values[parent] < this.values[idx]) {
       this.swap(this.values, idx, parent);
@@ -30,12 +28,16 @@ class MaxHeap {
   }
 
   remooveRoot() {
-    let max = this.values.shift();
-    if (this.values.length > 2) {
-      let poped = this.values.pop();
-      this.values.unshift(poped);
-      this.bubbleDown();
+    if (this.values.length === 0) {
+      return undefined;
     }
+    if (this.values.length === 1) {
+      return this.values.pop();
+    }
+    const max = this.values[0];
+    this.values[0] = this.values.pop();
+    this.bubbleDown(0);
+
     return max;
   }
 
@@ -51,7 +53,7 @@ class MaxHeap {
         this.swap(this.values, idx, rightIdx);
         idx = rightIdx;
       } else {
-        this.swap(this.values, idx, rightIdx);
+        this.swap(this.values, idx, leftIdx);
         idx = leftIdx;
       }
       leftIdx = idx * 2 + 1;
@@ -64,20 +66,32 @@ const n = input.shift();
 const arr = input.map((v) => +v);
 
 function solution(arr) {
-  let heap = new MaxHeap();
-  let result = [];
+  let values = new Maxvalues();
+  let result = '';
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
-      let num = heap.remooveRoot();
-      if (num === undefined) result.push(0);
-      else result.push(num);
+      let num = values.remooveRoot();
+      if (num === undefined) result = result + '0' + '\n';
+      else result = result + num + '\n';
     } else {
-      heap.insert(arr[i]);
+      values.insert(arr[i]);
     }
   }
-  for (let i = 0; i < result.length; i++) {
-    console.log(result[i]);
-  }
+  console.log(result);
 }
 
 solution(arr);
+
+// let heap = new Maxvalues();
+
+// heap.remooveRoot();
+// heap.insert(1);
+// heap.insert(2);
+// console.log(heap.values);
+// heap.remooveRoot();
+// console.log(heap.values);
+// heap.remooveRoot();
+
+// heap.insert(2);
+// heap.insert(4);
+// heap.insert(30);
