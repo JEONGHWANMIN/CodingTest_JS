@@ -878,3 +878,22 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    597cce2..7ecb15b  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-02 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 20 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Algo/LCS.js
+	new file:   Algo/python/LCS.py
+	modified:   BackJoon/heap/11279.js
+	modified:   autopush.sh.log
+
+[master 7c84cae] git commit auto push
+ 4 files changed, 83 insertions(+), 20 deletions(-)
+ create mode 100644 Algo/LCS.js
+ create mode 100644 Algo/python/LCS.py
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   7ecb15b..7c84cae  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-08-03 17:50:00 #####
