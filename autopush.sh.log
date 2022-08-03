@@ -897,3 +897,22 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    7ecb15b..7c84cae  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-03 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 21 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+	new file:   leetcode/Arrays_hashing/1_Two Sum.js
+	new file:   leetcode/Arrays_hashing/217_Contains Duplicate.js
+	new file:   leetcode/Arrays_hashing/242_Valid Anagram.js
+
+[master 9edd8cc] git commit auto push
+ 4 files changed, 75 insertions(+)
+ create mode 100644 leetcode/Arrays_hashing/1_Two Sum.js
+ create mode 100644 leetcode/Arrays_hashing/217_Contains Duplicate.js
+ create mode 100644 leetcode/Arrays_hashing/242_Valid Anagram.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   7c84cae..9edd8cc  master -> master
+##### AUTO PUSH END #####
