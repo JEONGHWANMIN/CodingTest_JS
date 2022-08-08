@@ -946,3 +946,21 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    3fe05de..1296e68  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-06 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Algo/test.js
+	modified:   autopush.sh.log
+	new file:   leetcode/Arrays_hashing/longestConsecutive.js
+
+[master 2e8936d] git commit auto push
+ 3 files changed, 32 insertions(+)
+ create mode 100644 Algo/test.js
+ create mode 100644 leetcode/Arrays_hashing/longestConsecutive.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   1296e68..2e8936d  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-08-08 17:50:00 #####
