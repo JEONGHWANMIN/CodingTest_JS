@@ -964,3 +964,18 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    1296e68..2e8936d  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-08 17:50:00 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+	new file:   leetcode/sliding_window/121_BestTimetoBuyandSellStock.js
+
+[master ef56b88] git commit auto push
+ 2 files changed, 47 insertions(+)
+ create mode 100644 leetcode/sliding_window/121_BestTimetoBuyandSellStock.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   a23e182..ef56b88  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-08-09 17:50:00 #####
