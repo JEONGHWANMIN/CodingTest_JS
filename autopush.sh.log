@@ -993,3 +993,25 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    ef56b88..f557477  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-10 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   Algo/test.js
+	new file:   Algo/test2.js
+	new file:   Algo/test3.js
+	new file:   Algo/test4.js
+	modified:   autopush.sh.log
+
+[master 4bb0249] git commit auto push
+ 5 files changed, 132 insertions(+), 3 deletions(-)
+ rewrite Algo/test.js (100%)
+ create mode 100644 Algo/test2.js
+ create mode 100644 Algo/test3.js
+ create mode 100644 Algo/test4.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   f557477..4bb0249  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-08-11 17:50:00 #####

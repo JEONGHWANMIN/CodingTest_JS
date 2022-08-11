@@ -1,39 +1,39 @@
 function movingStuff(stuff, limit) {
-  let box = 0;
-  let count = 0;
   let rest = limit;
+  let r = stuff.length - 1;
+  let i = 0;
   stuff.sort((a, b) => b - a);
-  // 100
-  // [ 80, 70, 50, 50 ]
-  // rest = 20
-  // box = box + 1
-  // rest = 100
-  // [10 , 10 , 20 , 50 , 90 , 90] limit 100
-  // 3
-  // 4
-  let left = 0;
-  let minIdx = limit.length - 1;
-  const len = stuff.length;
-  for (let i = 0; i < len; i++) {
-    rest = rest - stuff[i]; // 100 - 80
-    count = count + 1;
-    // 최솟값이랑 비교하는 부분 (배열 최솟값도 박스에 들어가지 않으면 )
-    if (0 > rest - stuff[minIdx]) {
-      box = box + 1;
+  console.log(stuff);
+  let result = [];
+  // [ 80, 60, 50, 20, 10 ]
+  while (stuff.length) {
+    console.log("================");
+    if (stuff.length === 1) {
+      result.push([stuff[i]]);
+      break;
+    }
+    rest = rest - stuff[i];
+
+    if (0 <= rest - stuff[r]) {
+      console.log("빈 공간:", rest);
+      while (0 <= rest - stuff[r - 1]) r -= 1;
+      console.log("변경 후 작은 박스 공간:", stuff[r]);
       rest = limit;
-      count = count + 1;
+      result.push([stuff[i], stuff[r]]);
+      stuff.splice(r, 1);
+      stuff.splice(i, 1);
+    } else {
+      result.push([stuff[i]]);
+      stuff.splice(i, 1);
+      rest = limit;
     }
-    // 배열 최솟값이 들어가 진다면 ? (최대한 limit에 가깝게 넣어야 한다.)
-    else {
-      while (0 < rest - stuff[minIdx]) minIdx--;
-      console.log(stuff[minIdx]);
-    }
+    i = 0;
+    r = stuff.length - 1;
   }
-
-  return box;
+  console.log(result);
+  return result.length;
 }
-
-let output = movingStuff([70, 50, 80, 50], 100);
+let output = movingStuff([80, 60, 50, 20, 10], 100);
 console.log(output); // 3
 
 // output = movingStuff([60, 80, 120, 90, 130], 140);

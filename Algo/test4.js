@@ -1,19 +1,21 @@
-function ocean(target, type) {
-  // TODO: 여기에 코드를 작성합니다.
-  type.unshift(0);
-  console.log(type);
-  const arr = Array.from({ length: type.length }, (_, i) =>
-    Array.from({ length: target }, (_, i) => 0)
-  );
-  console.log(arr);
+function ocean(amount, coins) {
+  const dp = new Array(amount + 1).fill(0);
+
+  dp[0] = 1;
+
+  for (const coin of coins) {
+    // 1. i = 1  1~10
+    // 2. i = 2  2~10
+    // 3. i = 5  5~10
+    for (let i = coin; i <= amount; i++) {
+      //총 경우의 수 = 현재 코인으로 만드는 경우의 수 + 그 전 경우의 수
+      dp[i] = dp[i] + dp[i - coin];
+    }
+    console.log(`${coin}DP`, dp);
+  }
+  return dp[amount];
 }
 
-let output = ocean(50, [10, 20, 50]);
-// [10 10 10 10 10]
-// [10 20 20]
+let output = ocean(10, [1, 2, 5]);
 
-// [20 20 10]
-// [20 10 10 10]
-
-// [50]
 console.log(output); // 4
