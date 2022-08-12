@@ -13,16 +13,19 @@ function newChickenRecipe(stuffArr, choiceNum) {
 
   if (newStuff.length < choiceNum) return [];
 
-  function dfs(i, subset) {
+  function dfs(arr, i, subset) {
     if (i === choiceNum) {
       return result.push(subset);
     }
-    for (let k = i; k < stuffArr.length; k++) {
-      dfs(i + 1, [...subset, newStuff[k]]);
+    for (let k = 0; k < arr.length; k++) {
+      let num = arr[k];
+      const sliceArr = arr.slice();
+      sliceArr.splice(k, 1);
+      dfs(sliceArr, i + 1, [...subset, num]);
     }
   }
 
-  dfs(0, []);
+  dfs(newStuff, 0, []);
 
   return result;
 }
