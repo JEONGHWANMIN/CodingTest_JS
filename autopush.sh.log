@@ -1047,3 +1047,29 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    4bb0249..b6f2a3d  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-12 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Algo/browserStack.js
+	new file:   Algo/paveBox.js
+	new file:   Algo/que.js
+	new file:   Algo/queuePrinter.js
+	new file:   Algo/stack.js
+	modified:   Algo/test6.js
+	modified:   autopush.sh.log
+	new file:   leetcode/etc/17_letterCombinations.js
+
+[master f3f607e] git commit auto push
+ 8 files changed, 317 insertions(+), 4 deletions(-)
+ create mode 100644 Algo/browserStack.js
+ create mode 100644 Algo/paveBox.js
+ create mode 100644 Algo/que.js
+ create mode 100644 Algo/queuePrinter.js
+ create mode 100644 Algo/stack.js
+ create mode 100644 leetcode/etc/17_letterCombinations.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   b6f2a3d..f3f607e  master -> master
+##### AUTO PUSH END #####
