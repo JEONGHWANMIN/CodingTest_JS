@@ -1074,3 +1074,43 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    b6f2a3d..f3f607e  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-14 17:50:00 #####
+warning: adding embedded git repository: Koflit/daily-coding
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> Koflit/daily-coding
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached Koflit/daily-coding
+hint: 
+hint: See "git help submodule" for more information.
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Koflit/daily-coding
+	modified:   autopush.sh.log
+	new file:   leetcode/etc/12.IntegertoRoman.js
+	new file:   leetcode/sliding_window/3.Longest SubstringWithoutRepeatingCharacters.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Koflit/daily-coding (modified content)
+	modified:   autopush.sh.log
+
+[master 220e660] git commit auto push
+ 4 files changed, 95 insertions(+)
+ create mode 160000 Koflit/daily-coding
+ create mode 100644 leetcode/etc/12.IntegertoRoman.js
+ create mode 100644 leetcode/sliding_window/3.Longest SubstringWithoutRepeatingCharacters.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   7f3a587..220e660  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-08-15 17:50:00 #####

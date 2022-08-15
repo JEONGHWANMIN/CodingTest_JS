@@ -9,6 +9,7 @@ var lengthOfLongestSubstring = function (s) {
   let l = 0;
   for (let r = 0; r < s.length; r++) {
     let char = s[r];
+    
 
     map[char] = (map[char] || 0) + 1;
 
