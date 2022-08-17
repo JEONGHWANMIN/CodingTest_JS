@@ -1136,3 +1136,32 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    b371403..b5bbd9c  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-16 17:50:00 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Algo/createMatrix.js
+	new file:   Algo/dfs-bfs.js
+	new file:   Algo/getDirections.js
+	new file:   Algo/graph.js
+	modified:   autopush.sh.log
+	new file:   leetcode/trees/226.InvertBinaryTree.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Koflit/daily-coding (modified content)
+
+[master 772f94c] git commit auto push
+ 6 files changed, 278 insertions(+)
+ create mode 100644 Algo/createMatrix.js
+ create mode 100644 Algo/dfs-bfs.js
+ create mode 100644 Algo/getDirections.js
+ create mode 100644 Algo/graph.js
+ create mode 100644 leetcode/trees/226.InvertBinaryTree.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   8974412..772f94c  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-08-17 17:50:01 #####
