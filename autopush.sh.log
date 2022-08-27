@@ -1326,3 +1326,22 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    0373c08..8aede68  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-08-26 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   Koflit/daily-coding (modified content)
+
+[master 0aa2738] git commit auto push
+ 1 file changed, 20 insertions(+)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   8aede68..0aa2738  master -> master
+##### AUTO PUSH END #####
