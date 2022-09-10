@@ -1,7 +1,7 @@
 const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "../input.txt";
 let input = fs.readFileSync(filePath).toString().trim().split(" ");
-
+// https://www.calculatorsoup.com/calculators/discretemathematics/combinations.php
 function solution(num1, num2) {
   let denominator = 1;
   let molecule = 1;
