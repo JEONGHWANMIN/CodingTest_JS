@@ -1717,3 +1717,17 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    f1f329b..abcaea0  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-10-06 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+[master dc2543d] git commit auto push
+ 1 file changed, 14 insertions(+)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   abcaea0..dc2543d  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2022-10-07 17:50:00 #####
