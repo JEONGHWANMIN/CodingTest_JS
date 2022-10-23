@@ -1828,3 +1828,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    6e914c5..75e74ca  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2022-10-21 17:50:47 #####
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+[master 2c95de1] git commit auto push
+ 1 file changed, 14 insertions(+)
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+##### AUTO PUSH END #####
