@@ -263,3 +263,16 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    6e27537..0999e60  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2023-01-13 17:50:00 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+[master 3e52b34] git commit auto push
+ 1 file changed, 1 insertion(+)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   59905d8..3e52b34  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2023-01-15 17:50:00 #####
