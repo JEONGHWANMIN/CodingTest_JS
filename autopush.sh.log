@@ -421,3 +421,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    1da269e..f8e6fd4  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2023-03-05 17:50:00 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	new file:   BackJoon/string/11.js
+	modified:   autopush.sh.log
+
+[master 6e0244a] git commit auto push
+ 3 files changed, 7 insertions(+), 3 deletions(-)
+ create mode 100644 BackJoon/string/11.js
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   6458e5a..6e0244a  master -> master
+##### AUTO PUSH END #####
+##### PUSH START : 2023-03-19 17:50:00 #####
