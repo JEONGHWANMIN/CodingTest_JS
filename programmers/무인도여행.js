@@ -7,23 +7,20 @@ function solution(maps) {
   const dy = [0, 1, 0, -1];
 
   const dfs = (x, y, num) => {
+    console.log("x", x, "y", y, "num", num);
     let sum = Number(num);
 
     for (let i = 0; i < 4; i++) {
       const nx = x + dx[i];
       const ny = y + dy[i];
 
-      const isNotMove =
-        nx < 0 && ny < 0 && nx >= newMap.length && ny >= newMap[0].length;
-
-      console.log(isNotMove);
-      if (!isNotMove) {
+      if (nx >= 0 && ny >= 0 && nx < newMap.length && ny < newMap[0].length) {
         if (newMap[nx][ny] !== "X") {
           const next = newMap[nx][ny];
 
           newMap[nx][ny] = "X";
 
-          sum = sum + dfs(dx, dy, next);
+          sum += dfs(nx, ny, next);
         }
       }
     }
@@ -45,3 +42,8 @@ function solution(maps) {
 
   return answer;
 }
+
+const maps = ["X591X", "X1X5X", "X231X", "1XXX1"];
+const result = solution(maps);
+
+console.log(result);
