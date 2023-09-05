@@ -1,49 +1,42 @@
 function solution(maps) {
-  var answer = [];
+  const answer = [];
 
-  const newMap = maps.map((n) => n.split(""));
+  const copyMap = maps.map((map) => map.split(""));
 
-  const dx = [1, 0, -1, 0];
-  const dy = [0, 1, 0, -1];
+  const dx = [1, -1, 0, 0];
+  const dy = [0, 0, -1, 1];
 
-  const dfs = (x, y, num) => {
-    console.log("x", x, "y", y, "num", num);
-    let sum = Number(num);
+  function findConnectIsland(x, y, sum) {
+    let numberedSum = Number(sum);
 
     for (let i = 0; i < 4; i++) {
       const nx = x + dx[i];
       const ny = y + dy[i];
 
-      if (nx >= 0 && ny >= 0 && nx < newMap.length && ny < newMap[0].length) {
-        if (newMap[nx][ny] !== "X") {
-          const next = newMap[nx][ny];
+      if (nx >= 0 && ny >= 0 && nx < copyMap.length && ny < copyMap[0].length) {
+        if (copyMap[nx][ny] !== "X") {
+          const newSum = copyMap[nx][ny];
 
-          newMap[nx][ny] = "X";
+          copyMap[nx][ny] = "X";
 
-          sum += dfs(nx, ny, next);
+          numberedSum = numberedSum + findConnectIsland(nx, ny, newSum);
         }
       }
     }
+    return numberedSum;
+  }
 
-    return sum;
-  };
+  for (let i = 0; i < copyMap.length; i++) {
+    for (let j = 0; j < copyMap[0].length; j++) {
+      if (copyMap[i][j] === "X") continue;
 
-  for (let i = 0; i < newMap.length; i++) {
-    for (let j = 0; j < newMap[0].length; j++) {
-      if (newMap[i][j] === "X") continue;
+      const start = copyMap[i][j];
 
-      const start = newMap[i][j];
+      copyMap[i][j] = "X";
 
-      newMap[i][j] = "X";
-
-      answer.push(dfs(i, j, start));
+      answer.push(findConnectIsland(i, j, start));
     }
   }
 
-  return answer;
+  return answer.length ? answer.sort((a, b) => a - b) : [-1];
 }
-
-const maps = ["X591X", "X1X5X", "X231X", "1XXX1"];
-const result = solution(maps);
-
-console.log(result);
