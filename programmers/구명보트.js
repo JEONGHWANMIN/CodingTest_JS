@@ -1,14 +1,26 @@
 function solution(people, limit) {
-  var answer = 1;
+  var answer = 0;
 
   people.sort((a, b) => a - b);
 
-  let left = 0;
-  let right = people.length - 1;
+  let leftIdx = 0;
+  let rightIdx = people.length - 1;
 
-  while (left < right) {
-    if (people[left] + people[right] > limit) {
-      right--;
+  while (leftIdx <= rightIdx) {
+    if (leftIdx === rightIdx) {
+      answer++;
+      break;
+    }
+
+    if (people[leftIdx] + people[rightIdx] > limit) {
+      rightIdx--;
+      answer++;
+    }
+
+    if (people[leftIdx] + people[rightIdx] <= limit) {
+      leftIdx++;
+      rightIdx--;
+      answer++;
     }
   }
 
