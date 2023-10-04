@@ -12,6 +12,7 @@ var isSubsequence = function(s, t) {
       strIndex = strIndex + 1;
     }
   }
+  ;
 
   return strIndex === s.length
 };
