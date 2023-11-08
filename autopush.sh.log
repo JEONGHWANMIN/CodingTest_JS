@@ -702,3 +702,20 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ##### AUTO PUSH END #####
 ##### PUSH START : 2023-11-08 17:50:00 #####
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+	new file:   "programmers/\352\270\260\353\212\245\352\260\234\353\260\234.js"
+	renamed:    "\354\240\204\355\231\224\353\262\210\355\230\270\353\252\251\353\241\235.js" -> "programmers/\354\240\204\355\231\224\353\262\210\355\230\270\353\252\251\353\241\235.js"
+
+[master 4571895] git commit auto push
+ 3 files changed, 47 insertions(+)
+ create mode 100644 "programmers/\352\270\260\353\212\245\352\260\234\353\260\234.js"
+ rename "\354\240\204\355\231\224\353\262\210\355\230\270\353\252\251\353\241\235.js" => "programmers/\354\240\204\355\231\224\353\262\210\355\230\270\353\252\251\353\241\235.js" (100%)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   1704fce..4571895  master -> master
+##### AUTO PUSH END #####
