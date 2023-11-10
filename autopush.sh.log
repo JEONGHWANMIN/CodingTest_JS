@@ -720,3 +720,30 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    1704fce..4571895  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2023-11-10 17:50:00 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	renamed:    BackJoon/stack/10773.js -> BackJoon/queue_stack/10773.js
+	renamed:    BackJoon/stack/9012.js -> BackJoon/queue_stack/9012.js
+	renamed:    BackJoon/stack/stack.ts -> BackJoon/queue_stack/stack.ts
+	renamed:    "BackJoon/stack/\352\267\240\355\230\225\354\236\241\355\236\214\354\204\270\354\203\201.js" -> "BackJoon/queue_stack/\352\267\240\355\230\225\354\236\241\355\236\214\354\204\270\354\203\201.js"
+	renamed:    "BackJoon/stack/\353\217\204\355\202\244\353\217\204\355\202\244\352\260\204\354\213\235\353\223\234\353\246\254\353\257\270.js" -> "BackJoon/queue_stack/\353\217\204\355\202\244\353\217\204\355\202\244\352\260\204\354\213\235\353\223\234\353\246\254\353\257\270.js"
+	new file:   "BackJoon/queue_stack/\354\212\244\355\203\2352.js"
+	deleted:    BackJoon/stack/input.txt
+	modified:   autopush.sh.log
+
+[master a66ace1] git commit auto push
+ 9 files changed, 69 insertions(+), 9 deletions(-)
+ rename BackJoon/{stack => queue_stack}/10773.js (100%)
+ rename BackJoon/{stack => queue_stack}/9012.js (100%)
+ rename BackJoon/{stack => queue_stack}/stack.ts (100%)
+ rename "BackJoon/stack/\352\267\240\355\230\225\354\236\241\355\236\214\354\204\270\354\203\201.js" => "BackJoon/queue_stack/\352\267\240\355\230\225\354\236\241\355\236\214\354\204\270\354\203\201.js" (100%)
+ rename "BackJoon/stack/\353\217\204\355\202\244\353\217\204\355\202\244\352\260\204\354\213\235\353\223\234\353\246\254\353\257\270.js" => "BackJoon/queue_stack/\353\217\204\355\202\244\353\217\204\355\202\244\352\260\204\354\213\235\353\223\234\353\246\254\353\257\270.js" (100%)
+ create mode 100644 "BackJoon/queue_stack/\354\212\244\355\203\2352.js"
+ delete mode 100644 BackJoon/stack/input.txt
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   d2398c4..a66ace1  master -> master
+##### AUTO PUSH END #####
