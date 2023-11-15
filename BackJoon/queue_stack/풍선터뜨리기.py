@@ -1,6 +1,13 @@
+import sys
 from collections import deque
+input = sys.stdin.readline
+
+n = int(input())
+q = deque(enumerate(map(int, input().split())))
 
 def solution(n, input_papers):
+    print(n)
+    print(input_papers)
     papers = list(map(int, input_papers.split()))
     que = deque(range(1, n + 1))
 
@@ -28,5 +35,4 @@ def solution(n, input_papers):
 
     return " ".join(map(str, result))
 
-
-
+print(solution(n,q))
