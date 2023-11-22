@@ -2,31 +2,30 @@ const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "../input.txt";
 let input = fs.readFileSync(filePath).toString().trim().split(" ");
 
-function solution(len, n) {
-  let arr = Array.from({ length: len }, (_, i) => i + 1);
+//
+function solution(len, N) {
+  let result = "";
   const visit = Array.from({ length: len + 1 }).fill(false);
 
-  let result = "";
-  const dfs = (subset) => {
-    if (subset.length === n) {
-      result += subset.join(" ") + "\n";
-      return;
+  const dfs = (n = 1, subset = []) => {
+    if (subset.length === N) {
+      return (result = result + subset.join(" ") + "\n");
     }
 
-    for (let i = 0; i < arr.length; i++) {
-      if (visit[i] === true) continue;
+    for (let i = 1; i <= len; i++) {
+      if (visit[i]) continue;
       visit[i] = true;
-      dfs([...subset, arr[i]]);
+      dfs(i + 1, [...subset, i]);
       visit[i] = false;
     }
   };
 
-  dfs([]);
+  dfs();
 
-  console.log(result);
+  return result;
 }
 
-solution(+input[0], +input[1]);
+console.log(solution(+input[0], +input[1]));
 
 // [1,2,3,4]
 /**
