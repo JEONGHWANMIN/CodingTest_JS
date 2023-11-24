@@ -27,3 +27,28 @@ function solution(input) {
 }
 
 console.log(solution(input));
+
+/**
+ * function matrixSolution(input) {
+  const [a, b, c, d, e, f] = input.map(Number);
+
+  const A = [
+    [a, b],
+    [d, e]
+  ];
+
+  const B = [
+    c,
+    f
+  ];
+
+  const inverseA = invertMatrix(A);
+  if (inverseA) {
+    const result = multiplyMatrix(inverseA, B);
+    return `${result[0]} ${result[1]}`;
+  } else {
+    return "No solution exists";
+  }
+}
+
+ */
