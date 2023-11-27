@@ -828,3 +828,23 @@ hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ##### AUTO PUSH END #####
 ##### PUSH START : 2023-11-25 17:50:00 #####
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+[master 48be505] git commit auto push
+ 1 file changed, 21 insertions(+)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:JEONGHWANMIN/CodingTest_JS.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+##### AUTO PUSH END #####
