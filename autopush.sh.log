@@ -806,3 +806,45 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ##### AUTO PUSH END #####
+##### PUSH START : 2023-11-24 17:50:00 #####
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+	new file:   "programmers/\354\227\224\355\200\270.js"
+
+[master cd3d5e3] git commit auto push
+ 2 files changed, 35 insertions(+)
+ create mode 100644 "programmers/\354\227\224\355\200\270.js"
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'github.com:JEONGHWANMIN/CodingTest_JS.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+##### AUTO PUSH END #####
+##### PUSH START : 2023-11-25 17:50:00 #####
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   autopush.sh.log
+
+[master 48be505] git commit auto push
+ 1 file changed, 21 insertions(+)
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:JEONGHWANMIN/CodingTest_JS.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+##### AUTO PUSH END #####
