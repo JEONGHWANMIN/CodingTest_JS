@@ -33,8 +33,8 @@ function solution(n, ability) {
       const startTeam = subset;
       const linkTeam = numbers.filter((num) => !subset.includes(num));
 
-      let startValue = 0,
-        linkValue = 0;
+      let startValue = 0;
+      let linkValue = 0;
 
       for (let i = 0; i < n / 2; i++) {
         for (let j = i + 1; j < n / 2; j++) {

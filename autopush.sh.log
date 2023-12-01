@@ -865,3 +865,19 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
    e5ace22..03cd9b8  master -> master
 ##### AUTO PUSH END #####
 ##### PUSH START : 2023-12-01 17:50:01 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   BackJoon/Input.txt
+	new file:   "BackJoon/bactracking/\354\212\244\355\203\200\355\212\270\354\231\200\353\247\201\355\201\254.js"
+	modified:   "BackJoon/bactracking/\354\227\260\354\202\260\354\236\220\353\201\274\354\233\214\353\204\243\352\270\260.js"
+	modified:   autopush.sh.log
+
+[master fa080d9] git commit auto push
+ 4 files changed, 78 insertions(+), 3 deletions(-)
+ create mode 100644 "BackJoon/bactracking/\354\212\244\355\203\200\355\212\270\354\231\200\353\247\201\355\201\254.js"
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   6fd6e37..fa080d9  master -> master
+##### AUTO PUSH END #####
