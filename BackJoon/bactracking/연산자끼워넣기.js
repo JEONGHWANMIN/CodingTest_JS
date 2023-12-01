@@ -33,12 +33,14 @@ function calculateSum(num1, num2, operatorIndex) {
 }
 
 function solution(numbers, operator) {
+  let dfs_count = 0;
   let min = Infinity;
   let max = -Infinity;
 
   const dfs = (sum, operator, count) => {
     // 종료조건
     if (count === N - 1) {
+      dfs_count++;
       min = Math.min(min, sum);
       max = Math.max(max, sum);
       return;
@@ -55,6 +57,8 @@ function solution(numbers, operator) {
   };
 
   dfs(numbers[0], operator, 0);
+
+  console.log("Count", dfs_count);
 
   return `${max}\n${min}`;
 }
