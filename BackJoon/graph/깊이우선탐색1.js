@@ -33,14 +33,13 @@ function solution(graph) {
     }
   }
 
-  console.log("graph_map", graph_map);
-
-  const result = [];
+  let count = 1;
+  const result = Array.from({ length: N }).fill(0);
   const visited = Array.from({ length: N + 1 }).fill(false);
 
   const dfs = (node) => {
     visited[Number(node)] = true;
-    result.push(node);
+    result[node - 1] = count++;
 
     for (let i = 0; i < graph_map[node].length; i++) {
       const next_node = graph_map[node][i];
@@ -52,8 +51,7 @@ function solution(graph) {
 
   dfs(R);
 
-  console.log(visited);
-  console.log(result);
+  return result.join("\n");
 }
 
 console.log(solution(graph));
