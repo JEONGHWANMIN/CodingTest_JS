@@ -16,6 +16,17 @@ function solution(row_len, col_len, board) {
   const d_row = [0, 0, 1, -1];
   const d_col = [1, -1, 0, 0];
 
+  const isMove = (m_row, m_col) => {
+    return (
+      m_row >= 0 &&
+      m_col >= 0 &&
+      m_row < row_len &&
+      m_col < col_len &&
+      !visited[m_row][m_col] &&
+      board[m_row][m_col] === 1
+    );
+  };
+
   const bfs = (row, col) => {
     const que = [[row, col]];
 
@@ -31,15 +42,7 @@ function solution(row_len, col_len, board) {
         const m_row = row + d_row[i];
         const m_col = col + d_col[i];
 
-        const isMove =
-          m_row >= 0 &&
-          m_col >= 0 &&
-          m_row < row_len &&
-          m_col < col_len &&
-          !visited[m_row][m_col] &&
-          board[m_row][m_col] === 1;
-
-        if (isMove) {
+        if (isMove(m_row, m_col)) {
           que.push([m_row, m_col]);
         }
       }
