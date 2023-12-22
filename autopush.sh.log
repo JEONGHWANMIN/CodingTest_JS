@@ -948,3 +948,20 @@ To github.com:JEONGHWANMIN/CodingTest_JS.git
 ##### AUTO PUSH END #####
 ##### PUSH START : 2023-12-21 17:50:01 #####
 ##### PUSH START : 2023-12-22 17:50:00 #####
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	modified:   BackJoon/Input.txt
+	new file:   "BackJoon/greedy/\353\241\234\355\224\204.js"
+	modified:   autopush.sh.log
+
+[master ea17b90] git commit auto push
+ 3 files changed, 30 insertions(+), 12 deletions(-)
+ create mode 100644 "BackJoon/greedy/\353\241\234\355\224\204.js"
+To github.com:JEONGHWANMIN/CodingTest_JS.git
+   3a68d99..ea17b90  master -> master
+##### AUTO PUSH END #####

@@ -14,13 +14,25 @@ const ropes = input.slice(1).map(Number);
  *
  */
 function solution(n, ropes) {
-  let WEIGHT = 100000;
+  let weight = -Infinity;
 
-  // ropes에 가장 작은 값을 찾아야하는데 만약 0이라면 ?
+  ropes.sort((a, b) => b - a);
 
-  while (true) {
-    const distribute_weight = WEIGHT / ropes.length;
+  const rope_len = ropes.length;
+
+  let idx = 0;
+  while (idx < rope_len) {
+    // 이게 제일 작은 값
+    const cur_rope_len = ropes.length;
+    const lastRope = ropes.pop();
+    const use_weight = lastRope * cur_rope_len;
+
+    weight = Math.max(weight, use_weight);
+
+    idx++;
   }
+
+  return weight;
 }
 
 console.log(solution(n, ropes));
