@@ -1,9 +1,9 @@
-const fs = require('fs');
-const filePath = process.platform === 'linux' ? '/dev/stdin' : '../input.txt';
+const fs = require("fs");
+const filePath = process.platform === "linux" ? "/dev/stdin" : "../input.txt";
 let input = fs
   .readFileSync(filePath)
   .toString()
-  .split('\n')
+  .split("\n")
   .map((v: string) => +v);
 function solution(arr: number[]): void {
   // 1. 짝수를 찿는다. [3,8,10,16]
@@ -42,7 +42,7 @@ function solution(arr: number[]): void {
         }
       }
     }
-    console.log(dif_arr[0] + ' ' + dif_arr[1]);
+    console.log(dif_arr[0] + " " + dif_arr[1]);
   }
 }
 
