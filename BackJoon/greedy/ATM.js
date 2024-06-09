@@ -14,18 +14,16 @@ const TIMES = input[1].split(" ").map(Number);
  * 정렬된 구간합을 구한다.
  */
 function solution(n, times) {
-  console.log(n, times);
-  console.log(1 + 3 + 6 + 9 + 13);
+  let result = 0;
+  let totalTime = 0
+  const sortedTimes = times.sort((a, b) => a - b);
+
+  for (let i = 0; i < sortedTimes.length; i++) {
+    totalTime = totalTime + sortedTimes[i]
+    result = result + totalTime
+  }
+
+  return result
 }
 
 console.log(solution(N, TIMES));
-
-// [3,1,4,3,2]
-
-// 2 5 1 4 3
-
-// 1 2 3 3 4
-
-// 1 + 2 + 3 + 3 + 4
-
-// 1 + 3 + 6 + 9 + 13
