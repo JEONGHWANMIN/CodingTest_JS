@@ -7,6 +7,7 @@ const [N,MAX_WEIGHT] = input[0].split(" ").map(Number)
 const inputs = input.slice(1).map(row => row.split(" ").map(Number))
 
 /**
+ * 알고리즘 유형 : dp
  * 출력: 배낭에 넣을 수 있는 물건들의 가치합의 최댓값
  * input : [ [ 6, 13 ], [ 4, 8 ], [ 3, 6 ], [ 5, 12 ] ]
  * max weight : 7
