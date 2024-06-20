@@ -1,4 +1,4 @@
-// 문제: https://arc.net/l/quote/xongkahn
+// 문제: https://www.acmicpc.net/problem/15656
 // 알고리즘: 백트랙킹
 // 키워드
 const fs = require("fs");
@@ -9,19 +9,24 @@ const [N,M] = input[0].split(" ").map(Number)
 const numbers = input[1].split(" ").map(Number)
 numbers.sort((a, b) => a - b);
 
+
 function solution(n, m, numbers) {
     const result = []
+    const visited = Array.from({length: numbers.length}, () => false)
 
     const dfs = (index, subset = []) => {
         if (subset.length === m) {
-            result.push(subset.join(" "))
+            if (!result.includes(subset.join(" "))) result.push(subset.join(" "))
             return
         }
         if (index === n + 1) return
 
 
         for (let i = 0 ; i < n ; i++) {
+            if (visited[i]) continue
+            visited[i] = true
             dfs(i+1, [...subset, numbers[i]])
+            visited[i] = false
         }
     }
 
