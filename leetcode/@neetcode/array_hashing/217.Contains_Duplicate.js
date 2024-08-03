@@ -3,13 +3,13 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    const listLength = nums.length;
-    const setLength = [...new Set(nums)].length
-
-    return listLength !== setLength;
+    return nums.length === [...new Set(nums)].length ? false : true
 };
 
 
+
+new Map()
+new Set()
 // Example1
 console.log(containsDuplicate([1,2,3,1]));
 
