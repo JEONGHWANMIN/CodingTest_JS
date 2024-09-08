@@ -1,20 +1,31 @@
 /**
- * @param {string} s
- * @return {string}
+ * @param {number[]} nums
+ * @return {number}
  */
-var reverseWords = function (s) {
-  // 앞뒤 공백 제거
-  // 중간에 공백이 2개 이상 지속될 경우 제거
-  // 공백 한개를 기준으로 단어를 잘라서 뒤집는다.
+var maxProduct = function(nums) {
+    let res = Math.max(...nums)
+    let max = 1;
+    let min = 1;
 
-  const sArr = s.trim().split("");
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === 0) {
+            max = 1;
+            min = 1;
+            continue
+        }
 
-  for (let i = 0; i < sArr.length; i++) {
-    // 공백이 연속 2개 라면 하나 제거
-    if (sArr[i] === " " && sArr[i + 1] === " ") {
-      sArr[i] = "";
+        let tempMax = max; // max 값을 갱신하기 전에 저장
+
+        // 최대값과 최소값 갱신
+        max = Math.max(nums[i], nums[i] * max, nums[i] * min);
+        min = Math.min(nums[i], nums[i] * tempMax, nums[i] * min);
+
+        // 결과값 갱신
+        res = Math.max(res, max);
     }
-  }
 
-  return sArr.join("").split(" ").reverse().join(" ");
+
+    return res
 };
+
+console.log(maxProduct([2,3,-2,4]))
