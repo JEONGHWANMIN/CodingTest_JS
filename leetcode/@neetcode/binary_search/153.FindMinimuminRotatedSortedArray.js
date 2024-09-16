@@ -9,12 +9,19 @@ var findMin = function(nums) {
     while (leftIdx <= rightIdx) {
         const midIdx = Math.floor((leftIdx+rightIdx) / 2);
 
+
+        // rotate case
         if ( nums[midIdx-1] > nums[midIdx]){
             return nums[midIdx]
         }
 
+
+        // 전체 배열 정렬 케이스
+        if (nums[leftIdx] < nums[rightIdx]) {
+            return nums[leftIdx];
+        }
+
         if (nums[leftIdx] <= nums[midIdx]) {
-            if (nums[leftIdx] < nums[rightIdx]) return nums[leftIdx];
             leftIdx = midIdx + 1;
         } else {
             rightIdx = midIdx - 1;
