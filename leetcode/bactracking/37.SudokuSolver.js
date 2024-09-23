@@ -1,77 +1,50 @@
-const createColBoard = (board, col) => {
-    const colBoard = []
-    for (let i_row = 0 ; i_row < board.length ; i_row++) {
-        colBoard.push(board[i_row][col])
-    }
-
-    return colBoard
-}
-
-const boardArrange = [
-    [0, 2],
-    [3, 5],
-    [6, 8]
-]
-const createSquareBoard = (board, row, col) => {
-    const squareBoard = []
-
-    const rowIdx = Math.floor(row / 3)
-    const colIdx = Math.floor(col / 3)
-    const [rowStart, rowEnd] = boardArrange[rowIdx]
-    const [colStart, colEnd] = boardArrange[colIdx]
-
-    for (let i = rowStart; i <= rowEnd ; i++) {
-        for (let j = colStart; j <= colEnd; j++) {
-            squareBoard.push(board[i][j])
-        }
-
-    }
-
-    return squareBoard
-}
-
-const isValid = (arr) => {
-    const filtered = arr.filter((ar) => ar !== '.')
-    return filtered.length === new Set(filtered).size
-}
-
-const isValidCheckSudoku = (board, row, col) => {
-    let rowBoard = board[row]
-    if (!isValid(rowBoard)) return false
-    let colBoard = createColBoard(board, col)
-    if (!isValid(colBoard)) return false
-    let squareBoard = createSquareBoard(board, row, col)
-    if (!isValid(squareBoard)) return false
-
-    return true
-}
+const getBoxesIndex = (row, col) => Math.floor(row / 3) * 3 + Math.floor(col / 3)
 
 /**
  * @param {character[][]} board
  * @return {void} Do not return anything, modify board in-place instead.
  */
 var solveSudoku = function(board) {
+    const rows = Array.from({length: board.length}, () => new Set());
+    const cols = Array.from({length: board.length}, () => new Set());
+    const boxes = Array.from({length: board.length}, () => new Set());
 
-    const dfs = (row, col) => {
-        if (row === 9) return true;
-        if (col === 9) return dfs(row + 1, 0);
-        if (board[row][col] !== '.') return dfs(row, col + 1);
-
-        for (let i = 1; i <= 9; i++) {
-            board[row][col] = String(i);
-
-            if (isValidCheckSudoku(board, row, col)) {
-                if (dfs(row, col + 1)) return true;
-            }
-
-            board[row][col] = '.';
+    for (let row = 0; row < board.length; row++) {
+        for (let col = 0; col < board[0].length; col++) {
+            if (board[row][col] === '.') continue
+            const num = board[row][col];
+            rows[row].add(num)
+            cols[col].add(num)
+            boxes[getBoxesIndex(row,col)].add(num)
         }
-
-        return false;
     }
 
 
-     dfs(0,0)
+    const dfs = (row, col) => {
+        if (row === 9) return true
+        if (col === 9) return dfs(row+1, 0)
+        if (board[row][col] !== '.') return dfs(row, col + 1)
+
+        for (let num = 1; num <= 9; num++) {
+            const SNum = String(num)
+            if (!rows[row].has(SNum) && !cols[col].has(SNum) && !boxes[getBoxesIndex(row,col)].has(SNum)) {
+                board[row][col] = SNum
+                rows[row].add(SNum)
+                cols[col].add(SNum)
+                boxes[getBoxesIndex(row,col)].add(SNum)
+
+                if (dfs(row, col + 1)) return true
+
+                board[row][col] = '.'
+                rows[row].delete(SNum)
+                cols[col].delete(SNum)
+                boxes[getBoxesIndex(row,col)].delete(SNum)
+            }
+
+        }
+    }
+
+    dfs(0,0)
 
     return board
 };
