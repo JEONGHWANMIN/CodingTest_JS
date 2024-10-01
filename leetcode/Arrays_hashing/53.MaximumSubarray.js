@@ -3,11 +3,34 @@
  * @return {number}
  */
 var maxSubArray = function (nums) {
-  let sum = -Infinity;
-  let cSum = -Infinity;
+  let maxSum = Math.max(...nums);
+  let curSum = 0;
+
   for (let i = 0; i < nums.length; i++) {
-    sum = Math.max(sum + nums[i], nums[i]); // 5 9 9 16 24
-    cSum = Math.max(cSum, sum); // 5 9 9 16 24
+    curSum = Math.max(curSum + nums[i], nums[i]);
+    maxSum = Math.max(maxSum, curSum);
   }
-  return cSum;
+
+  return maxSum
 };
+
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var maxSubArrayList = function (nums) {
+  let maxSum = Math.max(...nums);
+  let curSum = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    curSum = Math.max(curSum + nums[i], nums[i]);
+    maxSum = Math.max(maxSum, curSum);
+  }
+
+  return maxSum
+};
+
+
+// console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+console.log(maxSubArrayList([-2,1,-3,4,-1,2,1,-5,4]))

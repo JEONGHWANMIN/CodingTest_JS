@@ -1,37 +1,27 @@
+// n 배열길이, k 단어길이
+// 시간복잡도: O(n * k log k)
+// 공간복잡도: O(n * k)
 /**
  * @param {string[]} strs
  * @return {string[][]}
  */
-var groupAnagrams = function (strs) {
-  let result = [];
-  for (let i = 0; i < strs.length; i++) {
-    const sorted = strs[i].split('').sort().join('');
-    result.push(sorted);
-  }
+var groupAnagrams = function(strs) {
+  const map = new Map()
 
-  const map = {};
-  for (let i = 0; i < result.length; i++) {
-    if (result[i] in map) {
-    } else {
-      map[result[i]] = [];
+  for (const word of strs) {
+    const sortedWord = word.split("").sort().join("")
+
+    if (!map.has(sortedWord)) {
+      map.set(sortedWord, [])
     }
+
+    map.set(sortedWord, [...map.get(sortedWord), word]);
   }
 
-  for (let i = 0; i < result.length; i++) {
-    if (result[i] in map) {
-      map[result[i]].push(strs[i]);
-    }
-  }
 
-  let answer = [];
-  for (let [key, value] of Object.entries(map)) {
-    value.sort();
-    answer.push(value);
-  }
-  answer.sort((a, b) => a.length - b.length);
-
-  return answer;
+  return [...map.values()]
 };
 
-strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat'];
-groupAnagrams(strs);
+console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
+console.log(groupAnagrams([""]))
+console.log(groupAnagrams(["a"]))

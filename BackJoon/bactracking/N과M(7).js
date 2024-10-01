@@ -1,4 +1,4 @@
-// 문제: https://www.acmicpc.net/problem/15656
+// 문제: https://arc.net/l/quote/xongkahn
 // 알고리즘: 백트랙킹
 // 키워드
 const fs = require("fs");
