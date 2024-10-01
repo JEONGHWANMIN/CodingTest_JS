@@ -20,8 +20,8 @@ function solution(n, m, numbers) {
         if (index === n + 1) return
 
 
-        for (let i = 0 ; i < n ; i++) {
-            dfs(i+1, [...subset, numbers[i]])
+        for (let i = index ; i < n ; i++) {
+            dfs(i, [...subset, numbers[i]])
         }
     }
 
