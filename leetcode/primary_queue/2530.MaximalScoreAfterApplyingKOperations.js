@@ -95,5 +95,3 @@ var maxKelements = function(nums, k) {
 };
 
 console.log(maxKelements([1,10,3,3,3], 3))
-
-
