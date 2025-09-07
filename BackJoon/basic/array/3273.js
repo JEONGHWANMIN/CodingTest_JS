@@ -9,30 +9,18 @@ const target = Number(input[2])
 
 function solution(n, nums, target) {
     let result = 0;
-    // for (let i = 0; i < nums.length; i++) {
-    //     for (let j = i + 1; j < nums.length; j++) {
-    //         if (nums[i] + nums[j] === target) {
-    //             result++
-    //         }
-    //     }
-    // }
-    // return result;
 
-    const numSet = new Set([...nums]);
-    const set = new Set();
-    for (let i = 0; i < nums.length; i++) {
-        const n = target - nums[i]
-        set.add(n)
+    nums.reverse();
+
+
+    const map = new Map();
+    for (let num of nums) {
+        const requiredNum = target - num
+        if (map.has(requiredNum)) result++
+        map.set(num, requiredNum);
     }
 
-    const setArr = [...set.values()]
-    for (let i = 0; i < set.size; i++) {
-        if (numSet.has(setArr[i])) {
-            result++
-        }
-    }
-
-    return result / 2;
+    return result
 }
 
 console.log(solution(n, nums, target));
